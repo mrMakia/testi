@@ -1,0 +1,11 @@
+<h4>This is parent component</h4>
+<div>This is a {{ message1 }}</div>
+<div>{{ message2 }}</div>
+<div>{{ message3 }}</div>
+<div elementCustomColor>{{ message4 }}</div>
+<div *ngIf="message4">
+    <button style="margin-top: 5px;" (click)="deleteMessage()">Delete Message</button>
+</div>
+<app-child [childMessage]="parentMessage" [secoundMessage]="secoundParentMessage"
+(messageEvent)="receiveMessage($event)"></app-child>
+
