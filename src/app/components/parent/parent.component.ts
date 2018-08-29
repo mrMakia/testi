@@ -41,3 +41,5 @@ export class ParentComponent implements AfterViewInit, OnInit {
     this.sharedService.currentMessage.subscribe(x => this.message4 = x);
   }
 }
+
+// add comment
