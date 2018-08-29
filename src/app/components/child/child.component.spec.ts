@@ -38,9 +38,7 @@ describe('ChildComponent', () => {
   }));
 
   it('@Inputs should be undefined', async(() => {
-    expect(typeof component.changeMessage).toEqual('string'),
     expect(fixture.componentInstance.childMessage).toBeUndefined();
-    expect(typeof component.secoundMessage).toEqual('string');
     expect(fixture.componentInstance.secoundMessage).toBeUndefined();
   }));
 
